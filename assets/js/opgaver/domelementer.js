@@ -8,6 +8,11 @@ Du skal finde elementet med id="yellowFigure" og console logge det.
 */
 
 // din kode her
+const element=document.getElementById("redFigure");
+console.log(element);
+
+const element2=document.getElementById("yellowFigure");
+console.log(element);
 
 
 /* opgave 1.2
@@ -17,6 +22,10 @@ farven på elementerne skal være blå. brug evt. elelement.style.backgroundColo
 
 
 // din kode her
+document.getElementById("redFigure").style.backgroundColor="blue";
+
+document.getElementById("yellowFigure").style.backgroundColor="blue";
+
 
 
 
@@ -28,6 +37,15 @@ Du skal oprette følgende HTML elementer i Elementet med id opgaveTwo.
 
 
 // din kode her
+let elem=document.createElement("h2");
+elem.innerHTML="Opgave 2.1 løsning";
+document.getElementById("opgaveTwo").appendChild(elem);
+
+let newp=document.createElement("p");
+let newelem=document.createTextNode("Jeg har løst opgave 2.1");
+newp.appendChild(newelem);
+document.getElementById("opgaveTwo").appendChild(newp);
+
 
 
 // opgave 3 liveHTML lists
@@ -36,6 +54,9 @@ Du skal finde alle elementer med klassen purpleFigures og console logge resultat
 */
 
 // din kode her
+let items=document.getElementsByClassName("purpleFigures myFigure");
+console.log(items);
+
 
 
 /* opgave 3.2
@@ -71,6 +92,19 @@ const myData = {
 
 
 // din kode her
+let title=document.createElement("h3");
+title.innerHTML="Tiger";
+document.getElementById("opgaveFour").appendChild(title);
+
+let image=document.createElement("img");
+image.src='assets/img/standard_tiger.jpg';
+document.getElementById("opgaveFour").appendChild(image);
+
+let text=document.createElement("p");
+text.innerHTML="En tiger er et stort, katteagtig rovdyr med orange og sort striber i pelsen og skarpe tænder og kløer."
+document.getElementById("opgaveFour").appendChild(text);
+
+
 
 
 
